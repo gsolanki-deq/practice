@@ -1,0 +1,68 @@
+
+<html>
+
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript" src="empval.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <h3 align="center">EMPLOYEE REGISTRATION FORM</h3>
+    <table align="center" border="1">
+      <form>
+        <tr>
+          <td>Name : </td>
+          <td>
+            <input type="text" id="emp_name">
+          </td>
+        </tr>
+        <tr>
+          <td>Email : </td>
+          <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+          <td>Contact : </td>
+          <td><input type="number" id="contact"></td>
+        </tr>
+        <tr>
+          <td>Gender : </td>
+          <td><input type="radio" name="gender" id="male" value="male" checked>Male
+            <input type="radio" name="gender" id="female" value="female">Female</td>
+        </tr>
+        <tr>
+          <td>Department : </td>
+          <td>
+              <select id="department">
+                <option id="developer" value="Developer" selected>Developer</option>
+                <option id="marketing" value="Marketing">Marketing</option>
+                <option id="hr" value="Human Resource">Human Resource</option>
+                <option id="designer" value="Designer">Designer</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Technology : </td>
+          <td>
+              <input type="checkbox" id="react" value="React.js">React.js
+              <input type="checkbox" id="node" value="Node.js">Node.js
+              <input type="checkbox" id="ruby" value="Ruby">Ruby
+              <input type="checkbox" id="photoshop" value="Photoshop">Photoshop
+              <input type="checkbox" id="excel" value="Excel">Excel
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p align="center">
+              <input type="button" value="Submit" onclick = validate_form() />
+              <input type="reset" value="Reset"></p>
+          </td>
+        </tr>
+      </form>
+    </table>
+    <h3 align="center">Employee Details :</h3>
+    <div id="employeeDetails"></div>  
+  </div>
+</body>
+</html>
